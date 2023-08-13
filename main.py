@@ -284,29 +284,40 @@ for i in range(len(a)):
         smallest=a[i]
 print(sum/len(a),'is the average grade')
 print(largest,'is the highest grade')
-print(smallest,'is the lowest grade')'''
+print(smallest,'is the lowest grade')
 a=[]
-
-num=int(input('Enter a number here: '))
-
 while (True):
-
+    num=int(input('Enter a number here: '))
     if (num==1):
-
         choice=input('Enter a item here: ')
-
         a.append(choice)
-
     elif (num==2):
-
-        remove=int(input('Enter the position you would like to remove'))
-        a.remove([remove])
+        details=int(input('Enter the position you would like to remove: '))
+        a.pop(details)
     elif (num==3):
         print(a)
     elif (num==4):
         choice=input('Enter a item here: ')
         if (choice==a):
-a.append(choice)
-print(a)
-     elif (num==5):
-break
+            a.append(choice)
+            print(a)
+    elif (num==5):
+        break
+a=[]
+while (True):
+    num = int(input('Enter a number here: '))
+    if (num==1):
+        choice=input('Enter a item here: ')
+        a.append(choice)
+    elif (num==2):
+        remove=int(input('Enter the position you would like to remove: '))
+        a.pop(remove)
+    elif (num==3):
+        print(a)
+    elif (num==4):
+        choice=input('Enter a item here: ')
+        if (choice==a):
+            a.append(choice)
+            print(a)
+    elif (num==5):
+        break'''
